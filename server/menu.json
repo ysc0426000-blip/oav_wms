@@ -1,0 +1,133 @@
+[
+  {
+    "module": "SD訂單模組",
+    "sections": [
+      {
+        "section": "組織架構",
+        "items": [
+          { "label": "銷售組織維護", "type": "lookup", "table": "銷售組織維護" }
+        ]
+      },
+      {
+        "section": "主數據",
+        "items": [
+          { "label": "客戶資料維護", "type": "lookup", "table": "客戶資料維護" }
+        ]
+      },
+      {
+        "section": "交易數據",
+        "items": [
+          { "label": "客戶訂單維護", "type": "doc", "header": "客戶訂單主檔", "detail": "客戶訂單明細" },
+          { "label": "訂單出貨維護", "type": "doc", "header": "訂單出貨主檔", "detail": "訂單出貨明細" },
+          { "label": "出貨退回維護", "type": "doc", "header": "出貨退回主檔", "detail": "出貨退回明細" }
+        ]
+      },
+      {
+        "section": "報表輸出",
+        "items": [
+          { "label": "已訂未出明細", "type": "report", "view": "已訂未出明細" },
+          { "label": "訂單出退分析", "type": "report", "view": "訂單出退分析" },
+          { "label": "訂單出退分析(樞紐)", "type": "pivot", "proc": "usp_訂單出退分析樞紐" }
+        ]
+      }
+    ]
+  },
+  {
+    "module": "MM採購模組",
+    "sections": [
+      {
+        "section": "組織架構",
+        "items": [
+          { "label": "採購組織維護", "type": "lookup", "table": "採購組織維護" }
+        ]
+      },
+      {
+        "section": "主數據",
+        "items": [
+          { "label": "廠商資料維護", "type": "lookup", "table": "廠商資料維護" }
+        ]
+      },
+      {
+        "section": "交易數據",
+        "items": [
+          { "label": "廠商採購維護", "type": "doc", "header": "廠商採購主檔", "detail": "廠商採購明細" },
+          { "label": "採購收貨維護", "type": "doc", "header": "採購收貨主檔", "detail": "採購收貨明細" },
+          { "label": "收貨退回維護", "type": "doc", "header": "收貨退回主檔", "detail": "收貨退回明細" }
+        ]
+      },
+      {
+        "section": "報表輸出",
+        "items": [
+          { "label": "已採未交明細", "type": "report", "view": "已採未交明細" },
+          { "label": "採購收退分析", "type": "report", "view": "採購收退分析" },
+          { "label": "採購收退分析(樞紐)", "type": "pivot", "proc": "usp_採購收退分析樞紐" }
+        ]
+      }
+    ]
+  },
+  {
+    "module": "IM庫存模組",
+    "sections": [
+      {
+        "section": "組織架構",
+        "items": [
+          { "label": "工廠倉庫維護", "type": "lookup", "table": "工廠倉庫維護" }
+        ]
+      },
+      {
+        "section": "主數據",
+        "items": [
+          { "label": "物料資料維護", "type": "lookup", "table": "物料資料維護" }
+        ]
+      },
+      {
+        "section": "交易數據",
+        "items": [
+          { "label": "物料預留維護", "type": "doc", "header": "物料預留主檔", "detail": "物料預留明細" },
+          { "label": "庫存領用維護", "type": "doc", "header": "庫存領用主檔", "detail": "庫存領用明細" },
+          { "label": "庫存繳回維護", "type": "doc", "header": "庫存繳庫主檔", "detail": "庫存繳庫明細" }
+        ]
+      },
+      {
+        "section": "報表輸出",
+        "items": [
+          { "label": "庫存異動明細", "type": "undefined" },
+          { "label": "每日庫存餘額", "type": "report", "view": "每日庫存餘額" }
+        ]
+      }
+    ]
+  },
+  {
+    "module": "PP生產模組",
+    "sections": [
+      {
+        "section": "組織架構",
+        "items": [
+          { "label": "工廠代碼維護", "type": "lookup", "table": "工廠代碼維護" }
+        ]
+      },
+      {
+        "section": "主數據",
+        "items": [
+          { "label": "物管資料維護", "type": "lookup", "table": "物管資料維護" },
+          { "label": "用量清單維護", "type": "lookup", "table": "用量清單維護" }
+        ]
+      },
+      {
+        "section": "交易數據",
+        "items": [
+          { "label": "生產工單維護", "type": "doc", "header": "生產工單主檔", "detail": "生產工單明細" },
+          { "label": "工單領料維護", "type": "doc", "header": "工單領料主檔", "detail": "工單領料明細" },
+          { "label": "工單入庫維護", "type": "doc", "header": "工單入庫主檔", "detail": "工單入庫明細" }
+        ]
+      },
+      {
+        "section": "報表輸出",
+        "items": [
+          { "label": "庫存在途明細", "type": "undefined" },
+          { "label": "每日供需餘額", "type": "report", "view": "每日供需餘額" }
+        ]
+      }
+    ]
+  }
+]

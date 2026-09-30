@@ -1,0 +1,13 @@
+{
+  "name": "OAV ERP 庫存管理系統",
+  "short_name": "OAV ERP",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#1e3a5f",
+  "lang": "zh-TW",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "192x192 512x512", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
